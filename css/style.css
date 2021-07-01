@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+/*CSS DEL LOGIN ¿REUTILIZABLE?*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  body
-  {
+body{
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    background: linear-gradient(to bottom right, #bdc3c7, #f39c12);
-    padding: 50px;
     font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+  .body
+  {
+    background: linear-gradient(to bottom right, #bdc3c7, #f39c12);
+    padding: 50px;
   }
 
   header{
       padding-bottom: 50px;
   }
+
+
+    /*********************************/
+    /**LOGIN**/
+    /*********************************/
 
   .logo{
       justify-content:flex-start;
@@ -59,3 +68,6 @@
     margin-top:3px;
 }
 
+/*********************************/
+/****/
+/*********************************/
