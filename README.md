@@ -10,3 +10,4 @@ Tecnologias usadas hasta el momento:
     HTML
     CSS
     JAVASCRIPT
+    BOOTSTRAP
