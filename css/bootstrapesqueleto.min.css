@@ -22,7 +22,7 @@
   --white: #fff;
   --gray: #858796;
   --gray-dark: #5a5c69;
-  --primary: #4e73df;
+  --primary: #f39c12;
   --secondary: #858796;
   --success: #1cc88a;
   --info: #36b9cc;
@@ -3786,6 +3786,7 @@ input[type="submit"].btn-block {
   background-color: transparent;
   border-color: transparent;
 }
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #6e707e;
@@ -9111,8 +9112,8 @@ a:focus {
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #fcbd57;
+  background-image: linear-gradient(180deg, #f1b24b 10%, #b48333 100%);
   background-size: cover;
 }
 .bg-gradient-secondary {
@@ -9462,7 +9463,7 @@ a:focus {
   width: 6.5rem;
 }
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  font-size: 1rem;
   display: block;
 }
 .sidebar .nav-item.active .nav-link {
@@ -9486,7 +9487,7 @@ a:focus {
 .sidebar .nav-item .collapsing .collapse-inner {
   padding: 0.5rem 0;
   min-width: 10rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin: 0 0 1rem 0;
 }
 .sidebar .nav-item .collapse .collapse-inner .collapse-header,
@@ -9496,7 +9497,7 @@ a:focus {
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 0.65rem;
+  font-size: 1rem;
   color: #b7b9cc;
 }
 .sidebar .nav-item .collapse .collapse-inner .collapse-item,
@@ -9565,7 +9566,7 @@ a:focus {
   z-index: 1;
 }
 .sidebar .sidebar-brand .sidebar-brand-icon i {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .sidebar .sidebar-brand .sidebar-brand-text {
   display: none;
@@ -9577,13 +9578,13 @@ a:focus {
   text-align: center;
   padding: 0 1rem;
   font-weight: 800;
-  font-size: 0.65rem;
+  font-size: 1rem;
 }
 .sidebar .sidebar-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 1rem;
   border-radius: 0.35rem;
   color: rgba(255, 255, 255, 0.8);
   margin-left: 1rem;
@@ -9635,11 +9636,11 @@ a:focus {
     width: 14rem;
   }
   .sidebar .nav-item .nav-link i {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -9704,11 +9705,12 @@ a:focus {
     width: 6.5rem;
   }
   .sidebar.toggled .nav-item .nav-link span {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     display: block;
   }
   .sidebar.toggled .nav-item .nav-link i {
     margin-right: 0;
+    font-size: 1.1rem;
   }
   .sidebar.toggled .nav-item .nav-link[data-toggle="collapse"]::after {
     display: none;

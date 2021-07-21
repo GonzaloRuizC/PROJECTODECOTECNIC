@@ -7,7 +7,9 @@ Pagina web con la idea de estructurar los datos de Gastos y beneficios de la emp
 La web se encargara de conseguir los datos de gastos de materia junto con gastos de mano de obra y analizar esos datos para dar unos resultados en comparacion al beneficio conseguido por cada contrato.
 
 Tecnologias usadas hasta el momento:
-    HTML
-    CSS
-    JAVASCRIPT
-    BOOTSTRAP
+HTML
+CSS
+JAVASCRIPT
+
+LIBRERIAS:
+-BOOTSTRAP (JS,HTML,CSS)
