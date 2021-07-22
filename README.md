@@ -10,7 +10,6 @@ Tecnologias usadas hasta el momento:
 HTML
 CSS
 JAVASCRIPT
-SASS
 
 LIBRERIAS:
 -BOOTSTRAP (JS,HTML,CSS)

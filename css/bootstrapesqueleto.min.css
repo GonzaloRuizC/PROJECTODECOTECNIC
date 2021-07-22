@@ -5316,7 +5316,10 @@ a.close.disabled {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
-.modal-header .close {
+.modal-header h5 {
+  margin-right: 900px;
+}
+.modal-header .modal-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
@@ -10314,4 +10317,19 @@ footer.sticky-footer .copyright {
 }
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+/*MODALES, SACADOS DE SASS*/
+
+.modal-fullscreen {
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-fullscreen .modal-content {
+  height: 100%;
+  border: 0;
+  @include border-radius(0);
 }
