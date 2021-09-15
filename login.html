@@ -35,61 +35,48 @@
       <!--EL FORM ENTERO DE LOGIN-->
       <div class="login">
         <div class="login__titulo">INICIO SESION EN DECOTECNIC S.L.</div>
+        <!-- LLAMADA A LOGIN.PHP PARA HACER LA CONEXION A LA BASE DE DATOS -->
+        <form action="PHP/login.php" method="post">
+          <div class="login__nombre">
+            <div class="login__nombre__label">USUARIO:</div>
 
-        <div class="login__nombre">
-          <div class="login__nombre__label">USUARIO:</div>
-
-          <div class="login__nombre__imput">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="USUARIO"
-              class="form-control"
-              required
-            />
+            <div class="login__nombre__imput">
+              <input
+                type="text"
+                name="usuario"
+                id="usuario"
+                placeholder="USUARIO"
+                class="form-control"
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="login__contraseña">
-          <div class="login__contraseña__label">CONTRASEÑA:</div>
+          <div class="login__contraseña">
+            <div class="login__contraseña__label">CONTRASE&Ntilde;A:</div>
 
-          <div class="login__contraseña__imput">
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Contraseña"
-              class="form-control"
-              required
-            />
+            <div class="login__contraseña__imput">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="CONTRASE&Ntilde;A"
+                class="form-control"
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="login__cod">
-          <div class="login__cod__label">CODIGO SEGURIDAD:</div>
-
-          <div class="login__cod__imput">
-            <input
-              type="password"
-              name="cod"
-              id="cod"
-              placeholder="Codigo de Acceso"
-              class="form-control"
-              required
-            />
+          <div class="login__submit">
+            <div class="d-grid col-6 mx-auto">
+              <input
+                type="submit"
+                value="LOG IN"
+                class="boton btn btn-secondary btn-lg"
+              />
+            </div>
           </div>
-        </div>
-
-        <div class="login__submit">
-          <div class="d-grid col-6 mx-auto">
-            <input
-              type="submit"
-              value="LOG IN"
-              class="boton btn btn-secondary btn-lg"
-            />
-          </div>
-        </div>
+        </form>
       </div>
     </header>
   </body>
