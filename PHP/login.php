@@ -9,7 +9,7 @@
   $nombreServidor = "localhost";
   $nombreUsuario = "root";
   $passwordBaseDeDatos = "";
-  $nombreBaseDeDatos = "TFG";
+  $nombreBaseDeDatos = "decotecnic";
   
   // CONEXION A LA BASE DE DATOS
   $conn = new mysqli($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
@@ -29,9 +29,9 @@
     $_SESSION['usuario'] = $usuario;
      
     // REDIRECCION AL INDEX
-    header("Location: index.php"); 
+    header("Location: login.php"); 
   }else{
-    echo 'El email o password es incorrecto, vuelva a intenarlo.<br/>';
+    echo 'El usuario o password es incorrecto, vuelva a intenarlo.<br/>';
   }
 
 
