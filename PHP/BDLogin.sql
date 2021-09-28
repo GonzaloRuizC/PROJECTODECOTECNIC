@@ -4,3 +4,6 @@ CREATE TABLE `usuarios` (
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`memberID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+
+INSERT INTO `usuarios`(`username`, `password`) VALUES ('prueba','123');

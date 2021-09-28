@@ -17,10 +17,11 @@
   // VALIDACION
   if ($conn ->connect_error) {
     die("Connection failed: " . $conn ->connect_error);
+    echo 'vuelva a intenarlo.<br/>';
   }
    
   // CONSULTA PARA VER SI EXISTE DICHO USUARIO
-  $sql = sprintf("SELECT * FROM usuarios WHERE usuario='%s' AND password = %s", mysql_real_escape_string($usuario), mysql_real_escape_string($password));
+  $sql = sprintf("SELECT * FROM usuarios WHERE username='$usuario' AND password = '$password'");
   $resultado = $conn->query($sql);
    
   // VERIFICACION
@@ -29,9 +30,9 @@
     $_SESSION['usuario'] = $usuario;
      
     // REDIRECCION AL INDEX
-    header("Location: login.php"); 
+    header("Location: http://localhost/TFG/index.html"); 
   }else{
-    echo 'El usuario o password es incorrecto, vuelva a intenarlo.<br/>';
+    echo 'El email o password es incorrecto, vuelva a intenarlo.<br/>';
   }
 
 
