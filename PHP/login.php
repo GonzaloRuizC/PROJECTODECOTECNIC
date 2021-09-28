@@ -47,7 +47,7 @@ CONTROLACION DE SI EL USUARIO ESTA LOGUEADO NECESARIO EN TODAS LAS PAGINAS, APLI
   if(isset($_SESSION['usuario'])){
     
   }else{
-    header("Location: login.html"); 
+    header("Location: http://localhost/TFG/login.html"); 
   }
 ?>
 
@@ -64,7 +64,7 @@ LO QUE ES GUARDADO EL USUARIO EN LA SESION TE PROHIBA ENTRAR
   session_destroy();
    
   // Redirecciona a la página de login.
-  header("Location: login.html");
+  header("Location: http://localhost/TFG/login.html");
 ?>
 
 */
