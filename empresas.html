@@ -332,18 +332,63 @@
             <div class="modal-dialog modal-fullscreen">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">AÑADIR UN GASTO</h5>
-                  <button type="button" class="btn btn-outline-warning btn-lg ">EDITAR</button>
-                  <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                  <h5 class="modal-title" id="exampleModalLabel" style="margin-left:15px;">AÑADIR UN GASTO</h5>
+                  <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times" style="margin-right:40px;"></i></button>
                 </div>
                 <div class="modal-body">
                   <table class="table table-striped table-hover">
-                    
+
+                    <div class="form">
+                      <!-- LLAMADA A PHP MAS ADELANTE PARA HACER LA CONEXION A LA BASE DE DATOS Y INSERT -->
+                      <form action="" method="POST">
+                        
+                        <!-- NOMBRE PRINCIPAL -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">NOMBRE:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="nombre"
+                              id="nombre"
+                              placeholder="NOMBRE DE LA EMPRESA"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+
+
+                         <!-- PROYECTO ASOCIADO -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">PROYECTOS PARTICIPADOS:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="proyecto"
+                              id="proyecto"
+                              placeholder="PROYECTO"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                      
+                        <div class="form__submit">
+                          <div class="d-grid col-6 mx-auto">
+                            <input
+                              type="submit"
+                              value="AÑADIR"
+                              class="boton btn btn-warning btn-lg"
+                            />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </table>
                 </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
                 </div>
               </div>
             </div>
