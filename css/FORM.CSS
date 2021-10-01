@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 8px 8px;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.form__titulo {
+  padding-bottom: 5px;
+}
+
+.form div {
+  margin-top: 3px;
+}
+
+.form__submit {
+  padding-left: 600px;
+}
+
+/*********************************/
+/****/
+/********/
