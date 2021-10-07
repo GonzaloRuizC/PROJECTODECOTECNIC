@@ -228,7 +228,7 @@
             </form>
             <!--BOTON AÑADIR-->
 
-            <button type="button" class="btn btn-primary" style="margin-right:50px ;" >
+            <button type="button" class="btn btn-primary modalButton" style="margin-right:50px ;" data-toggle="modal" data-target="#Modalañadir">
               <i class="fas fa-plus"></i></button>
             <!--EL BOTON DEBE LLAMAR A UN MODAL CON UN FORMULARIO QUE SE DEBE AÑADIR A LA BBDD-->
 
