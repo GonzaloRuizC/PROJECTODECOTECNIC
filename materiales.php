@@ -294,7 +294,7 @@
 				?>
 		   
 			  
-                <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <tr data-toggle="modal" data-target="#Modalinfo">
                   <th scope="row" ><?php echo $contador ?></th>
                   <td><?php echo $nombre ?></td>
                   <td><?php echo $proyecto ?></td>
@@ -343,50 +343,173 @@
             </table>
           </div>
 
-          <!-- Modal PARA COPIAR Y HACER NUEVOS DE PHP -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn btn-outline-warning btn-lg ">EDITAR</button>
-                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="modal-body">
-                      <table class="table table-striped table-hover">
-                        
-                        <tbody>
-                          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <th scope="row" >Nombre</th>
-                            <td>Paco del paro</td>
-                          </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <th scope="row">Descripcion</th>
-                            <td>Obra en algun lado del mundo </td>
-                          </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <th scope="row">Empresas</th>
-                            <td>Decotecnic</td>  
-                          </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <th scope="row">Presupuesto</th>
-                            <td>10.000€</td>  
-                          </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <th scope="row">Filas n</th>
-                            <td>hacer todas las filas necesarias</td>  
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
-                  </div>
+          <!-- MODAL DE SELECT, SACAR INFO DE BBDD -->
+          <div class="modal fade" id="Modalinfo" role="dialog">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">aqui poner el nombre del gasto, mediante PHP</h5>
+                  <button type="button" class="btn btn-outline-warning btn-lg ">EDITAR</button>
+                  <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-striped table-hover">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row" >Nombre</th>
+                        <td>Paco del paro</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Descripcion</th>
+                        <td>Obra en algun lado del mundo </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Empresas</th>
+                        <td>Decotecnic</td>  
+                      </tr>
+                      <tr>
+                        <th scope="row">Presupuesto</th>
+                        <td>10.000€</td>  
+                      </tr>
+                      <tr>
+                        <th scope="row">Filas n</th>
+                        <td>hacer todas las filas necesarias</td>  
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
                 </div>
               </div>
             </div>
+          </div>
+          
+
+
+            <!-- MODAL PARA AÑADIR, INSERT-->
+          <div class="modal fade" id="Modalañadir" role="dialog">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="margin-left:15px;">AÑADIR UN GASTO</h5>
+                  <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times" style="margin-right:40px;"></i></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-striped table-hover">
+
+                    <div class="form">
+                      <!-- LLAMADA A PHP MAS ADELANTE PARA HACER LA CONEXION A LA BASE DE DATOS Y INSERT -->
+                      <form action="" method="POST">
+                        
+                        <!-- NOMBRE PRINCIPAL -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">NOMBRE:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="nombre"
+                              id="nombre"
+                              placeholder="NOMBRE DEL GASTO"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+
+
+                        <!-- PROYECTO ASOCIADO -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">PROYECTO:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="proyecto"
+                              id="proyecto"
+                              placeholder="PROYECTO"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <!-- IMPORTE BRUTO = SIN IVA -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">BASE IMPONIBLE:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="importe"
+                              id="importe"
+                              placeholder="BASE IMPONIBLE"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <!-- IMPORTANTE -->
+                        <!-- AUTOCALCULAR EL IVA -->
+                        <!-- Y AUTOCALCULAR EL IMPORTE TOTAL -->
+
+
+                        <!-- SECCION PARA LUEGO FILTRAR -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">SECCION:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="seccion"
+                              id="seccion"
+                              placeholder="SECCION"
+                              class="form-control"
+                              
+                            />
+                          </div>
+                        </div>
+
+
+
+                        <!-- FECHA PARA FILTRAR -->
+                        <div class="form__nombre">
+                          <div class="form__nombre__label">FECHA:</div>
+
+                          <div class="form__nombre__imput">
+                            <input
+                              type="text"
+                              name="fecha"
+                              id="fecha"
+                              placeholder="FECHA"
+                              class="form-control"
+                              
+                            />
+                          </div>
+                        </div>
+
+                        <div class="form__submit">
+                          <div class="d-grid col-6 mx-auto">
+                            <input
+                              type="submit"
+                              value="AÑADIR"
+                              class="boton btn btn-warning btn-lg"
+                            />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </table>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--FIN MODAL PARA AÑADIR, INSERT-->
 
 
         </div>
