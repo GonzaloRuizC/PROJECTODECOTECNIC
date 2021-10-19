@@ -262,9 +262,10 @@
                   <th scope="col">Nombre</th>
                   <th scope="col">Fecha Inicio</th>
                   <th scope="col">Fecha Finalizacion</th>
-                  <th scope="col">Importe neto</th>
+                  <th scope="col">Presupuesto</th>
                   <th scope="col">Gastos netos</th>
                   <th scope="col">Beneficio neto</th>
+                  <th scope="col">Empresas</th>
                 </tr>
               </thead>
               <tbody>
@@ -282,12 +283,14 @@
 				
 				while ($row=mysqli_fetch_row ($query)){
 		    	
-		    	$nombre=$row[0];
-		    	$fechaInicio=$row[1];
-		    	$fechaFinal=$row[2];
-		    	$importeNeto=$row[3];
-		    	$gastosNetos=$row[4];
-		    	$beneficioNeto=$row[5];
+          $contador=row[0];
+		    	$nombre=$row[1];
+		    	$fechaInicio=$row[2];
+		    	$fechaFinal=$row[3];
+		    	$presupuesto=$row[4];
+		    	$gastosNetos=$row[5];
+		    	$beneficioNeto=$row[6];
+          $empresas=$row[7];
 				
 				?>
 		   
@@ -297,13 +300,13 @@
                   <td><?php echo $nombre ?></td>
                   <td><?php echo $fechaInicio ?></td>
                   <td><?php echo $fechaFinal ?></td>
-                  <td><?php echo $importeNeto ?></td>
+                  <td><?php echo $presupuesto ?></td>
                   <td><?php echo $gastosNetos ?></td>
                   <td><?php echo $beneficioNeto ?></td>
+                  <td><?php echo $empresas ?></td>
                 </tr>
 				
 				<?php 
-				$contador = $contador + 1;
 				}
 				?>
 

@@ -276,8 +276,9 @@
                 
                 while ($row=mysqli_fetch_row ($query)){
                   
-                  $nombre=$row[0];
-                  $proyecto=$row[1];
+                  $contador=$row[0];
+                  $nombre=$row[1];
+                  $proyecto=$row[2];
                   
                 
                 ?>
@@ -291,7 +292,6 @@
                         </tr>
                 
                 <?php 
-                $contador = $contador + 1;
                 }
                 ?>
                 <!--
@@ -343,8 +343,8 @@
                         <td>Decotecnic</td>  
                       </tr>
                       <tr>
-                        <th scope="row">Presupuesto</th>
-                        <td>10.000€</td>  
+                        <th scope="row">Proyectos Participados</th>
+                        <td>4</td>  
                       </tr>
                       <tr>
                         <th scope="row">Filas n</th>

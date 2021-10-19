@@ -262,7 +262,7 @@
                   <th scope="col" ></th>
                   <th scope="col">Nombre</th>
                   <th scope="col">Proyecto</th>
-                  <th scope="col">Importe bruto</th>
+                  <th scope="col">BAse Imponible</th>
                   <th scope="col">IVA 21%</th>
                   <th scope="col">Importe neto</th>
                   <th scope="col">Fecha</th>
@@ -274,7 +274,6 @@
                 <?php 
 				// require("conexion.php");
 				
-				$contador = 1;
 				$conexion = mysqli_connect("localhost", "root", "", "decotecnic") or
 				die("Problemas con la conexión");
 				
@@ -284,12 +283,13 @@
 				
 				while ($row=mysqli_fetch_row ($query)){
 		    	
-		    	$nombre=$row[0];
-		    	$proyecto=$row[1];
-		    	$impbruto=$row[2];
-		    	$iva=$row[3];
-		    	$impneto=$row[4];
-		    	$fecha=$row[5];
+		    	$contador=$row[0];
+          $nombre=$row[1];
+		    	$proyecto=$row[2];
+		    	$baseimponible=$row[3];
+		    	$iva=$row[4];
+		    	$impneto=$row[5];
+		    	$fecha=$row[6];
 				
 				?>
 		   
@@ -298,14 +298,13 @@
                   <th scope="row" ><?php echo $contador ?></th>
                   <td><?php echo $nombre ?></td>
                   <td><?php echo $proyecto ?></td>
-                  <td><?php echo $impbruto ?></td>
+                  <td><?php echo $baseimponible ?></td>
                   <td><?php echo $iva ?></td>
                   <td><?php echo $impneto ?></td>
                   <td><?php echo $fecha ?></td>
                 </tr>
 				
 				<?php 
-				$contador = $contador + 1;
 				}
 				?>
 
