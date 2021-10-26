@@ -309,10 +309,7 @@
                   <td><?php echo $fecha ?></td>
                 </tr>
 				
-				<?php 
-				
 				}
-				?>
                  
             <!--      
 
