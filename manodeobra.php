@@ -248,6 +248,25 @@
                 >
                   ELEGIR PROYECTO
               </button>
+
+              <?php 
+				// require("conexion.php");
+				
+				
+				$conexion = mysqli_connect("localhost", "root", "", "decotecnic") or
+				die("Problemas con la conexión");
+				
+				$sql=("SELECT nombre FROM proyectos");
+  				// $query=mysqli_query($mysqli,$sql);
+				$query=mysqli_query($conexion,$sql);
+				
+        /*LUIS MIRA COMO HACER PARA QUE VE MOSTRANDO TODOS LOS PROYECTOS*/
+		    /*CON EL ESQUEMA DE ABAJO METIENDO ALLI EL NOMBRE DEL PROYECTO
+        Y GUARDANDOLO EN UNA VARIABLE (PARA USARLO DESPUES)*/
+		    	
+				
+				?>
+
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">PROYECTO 1</a></li>
                 <li><a class="dropdown-item" href="#">PROYECTO 2</a></li>
