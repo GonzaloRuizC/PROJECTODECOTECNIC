@@ -19,6 +19,16 @@ CREATE TABLE 'proyectos' (
     CONSTRAINT PRIMARY KEY (`proyecyoID`),
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
+CREATE TABLE 'contrato' (
+    'proyectoID' int(11) NOT NULL,
+    `empresaID` int(11) NOT NULL,
+    `contratoID` int(11) NOT NULL,
+    'presupuesto' FLOAT(11,2) NOT NULL,
+    'beneficio' FLOAT(11,2) NOT NULL,
+
+    
+)ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
 CREATE TABLE 'mano_de_obra'(
     'mano_de_obraID' int(11) NOT NULL AUTO_INCREMENT,
     'mano_de_obra' varchar(255) NOT NULL,
