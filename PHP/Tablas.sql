@@ -26,7 +26,7 @@ CREATE TABLE 'contrato' (
     'presupuesto' FLOAT(11,2) NOT NULL,
     'beneficio' FLOAT(11,2) NOT NULL,
 
-    
+        
 )ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 CREATE TABLE 'mano_de_obra'(
