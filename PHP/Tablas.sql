@@ -33,7 +33,7 @@ CREATE TABLE 'mano_de_obra'(
     'mano_de_obraID' int(11) NOT NULL AUTO_INCREMENT,
     'mano_de_obra' varchar(255) NOT NULL,
     /*CONECTAR CON EL PROYECTO*/
-    'proyecto' int(11) NOT NULL,
+    'proyectoID' int(11) NOT NULL,
     'base_imponible' FLOAT(11,2) NOT NULL,
     'IVA' FLOAT(11,2) NOT NULL,
     'importe_neto' FLOAT(11,2) NOT NULL,
@@ -46,12 +46,14 @@ CREATE TABLE 'mano_de_obra'(
 CREATE TABLE 'materiales'(
     'materialesID' int(11) NOT NULL AUTO_INCREMENT,
     'materiales' varchar(255) NOT NULL,
+
     /*CONECTAR CON EL PROYECTO*/
-    'proyecto' int(11) NOT NULL,
+    'proyectoID' int(11) NOT NULL,
     'base_imponible' FLOAT(11,2) NOT NULL,
     'IVA' FLOAT(11,2) NOT NULL,
     'importe_neto' FLOAT(11,2) NOT NULL,
     'fecha' date NOT NULL,
+
 
     /*falta asignar los gastos a un proyecto*/
     CONSTRAINT PRIMARY KEY (`materialesID`),
