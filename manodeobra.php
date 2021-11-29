@@ -133,7 +133,7 @@
               shadow
             "
           >
-
+          <!-- PHP PARA CARGAR UN USUARIO -->
             <ul class="navbar-nav ml-auto">
 
 
