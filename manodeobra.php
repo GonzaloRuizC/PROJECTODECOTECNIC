@@ -315,7 +315,7 @@
 		    	$impneto=$row[5];
 		    	$fecha=$row[6];
 				
-				?>
+        }?>
 		   
 			  
                 <tr data-toggle="modal" data-target="#Modalinfo">
@@ -328,7 +328,7 @@
                   <td><?php echo $fecha ?></td>
                 </tr>
 				
-				}
+				
                  
             <!--      
 
