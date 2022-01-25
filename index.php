@@ -78,7 +78,7 @@
           >
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="manodeobra.php">Mano de Obra</a>
-             <a class="collapse-item" href="materiales.php">Materiales</a>
+              <a class="collapse-item" href="materiales.php">Materiales</a>
             </div>
           </div>
         </li>
@@ -114,14 +114,7 @@
         <div id="content">
           <!-- BARRA DE ARRIBA -->
           <nav
-            class="
-              navbar navbar-expand navbar-light
-              bg-white
-              topbar
-              mb-4
-              static-top
-              shadow
-            "
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
           >
             <ul class="navbar-nav ml-auto">
               <!-- BARRA DE ARRIBA - NAV BAR-->
@@ -148,11 +141,7 @@
                 </a>
                 <!-- Dropdown  -->
                 <div
-                  class="
-                    dropdown-menu dropdown-menu-right
-                    shadow
-                    animated--grow-in
-                  "
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                   aria-labelledby="userDropdown"
                 >
                   <a class="dropdown-item" href="#">
@@ -219,12 +208,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
-                          class="
-                            text-xs
-                            font-weight-bold
-                            text-black-300 text-uppercase
-                            mb-1
-                          "
+                          class="text-xs font-weight-bold text-black-300 text-uppercase mb-1"
                         >
                           Ganancia Mensual
                         </div>
@@ -247,12 +231,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
-                          class="
-                            text-xs
-                            font-weight-bold
-                            text-black-300 text-uppercase
-                            mb-1
-                          "
+                          class="text-xs font-weight-bold text-black-300 text-uppercase mb-1"
                         >
                           Ganancia neta
                         </div>
@@ -275,25 +254,14 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
-                          class="
-                            text-xs
-                            font-weight-bold
-                            text-black-300 text-uppercase
-                            mb-1
-                          "
+                          class="text-xs font-weight-bold text-black-300 text-uppercase mb-1"
                         >
                           Dinero gastado
                         </div>
                         <div class="row no-gutters align-items-center">
                           <div class="col-auto">
                             <div
-                              class="
-                                h5
-                                mb-0
-                                mr-3
-                                font-weight-bold
-                                text-gray-800
-                              "
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
                             >
                               20%
                             </div>
@@ -329,12 +297,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
-                          class="
-                            text-xs
-                            font-weight-bold
-                            text-black-300 text-uppercase
-                            mb-1
-                          "
+                          class="text-xs font-weight-bold text-black-300 text-uppercase mb-1"
                         >
                           Gastos anticipados
                         </div>
@@ -359,14 +322,7 @@
                 <div class="card shadow mb-4">
                   <!-- Dropdown - OPCIONES -->
                   <div
-                    class="
-                      card-header
-                      py-3
-                      d-flex
-                      flex-row
-                      align-items-center
-                      justify-content-between
-                    "
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
                   >
                     <h6 class="m-0 font-weight-bold text-black">
                       Otro grafico pero de linea
@@ -386,11 +342,7 @@
                         ></i>
                       </a>
                       <div
-                        class="
-                          dropdown-menu dropdown-menu-right
-                          shadow
-                          animated--fade-in
-                        "
+                        class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                         aria-labelledby="dropdownMenuLink"
                       >
                         <div class="dropdown-header">Dropdown Header:</div>
@@ -417,14 +369,7 @@
                 <div class="card shadow mb-4">
                   <!--  Dropdown -->
                   <div
-                    class="
-                      card-header
-                      py-3
-                      d-flex
-                      flex-row
-                      align-items-center
-                      justify-content-between
-                    "
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
                   >
                     <h6 class="m-0 font-weight-bold text-black">
                       Un grafico de lo que quieras
@@ -444,11 +389,7 @@
                         ></i>
                       </a>
                       <div
-                        class="
-                          dropdown-menu dropdown-menu-right
-                          shadow
-                          animated--fade-in
-                        "
+                        class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                         aria-labelledby="dropdownMenuLink"
                       >
                         <div class="dropdown-header">Dropdown Header:</div>
